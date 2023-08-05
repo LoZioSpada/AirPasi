@@ -13,17 +13,17 @@
   <body>
     <!-- Esercizio 1: navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        <a class="navbar-brand" href="#"><img src="" alt="">LOGO DA METTERE</a> <!-- Esercizio 2: implementa logo -->
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="logo.png" width="100" height="50"></a> <!-- Esercizio 2: implementa logo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" href="#weekOffer">Offerta della Settimana <span class="sr-only">(current)</span></a>
-            <a class="nav-link active" href="#summer">Welcome Summer</a>
-            <a class="nav-link active" href="#dayOffer">Offerta del Giorno</a>
-            <a class="nav-link active" href="#lastMinute">Last Minute</a>
-            <a class="nav-link active" href="#testimonial">Testimonial</a>
+            <a class="nav-link active" href="#weekOffer"><strong>Offerta della Settimana</strong><span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#summer"><strong>Welcome Summer</strong></a>
+            <a class="nav-link active" href="#dayOffer"><strong>Offerta del Giorno</strong></a>
+            <a class="nav-link active" href="#lastMinute"><strong>Last Minute</strong></a>
+            <a class="nav-link active" href="#testimonial"><strong>Recensioni</strong></a>
           </div>
         </div>
       </nav>
@@ -46,8 +46,14 @@
       <!-- Esercizio 4: Offerta della Settimana -->
       <section id="weekOffer">
         <div class="container py-5">
+          <div class="d-flex align-items-center justify-content-between">
             <h1>Offerta della Settimana</h1>
-            <div class="row">
+            <button type="button" class="btn btn-light align-self-center" data-toggle="collapse"
+                    data-target="#collapseWeekOffer" aria-expanded="false" aria-controls="collapseWeekOffer">
+                    Collassa
+                </button>
+          </div>
+            <div class="row" id="collapseWeekOffer">
                 <div class="col-6 py-sm-3 col-md-4 col-lg-3">
                     <div class="card">
                         <img src="assets/img/dublino.jpg" class="card-img-top" alt="dublino.jpg">
@@ -99,8 +105,14 @@
       <!-- Esercizio 5: Welcome summer -->
       <section id="summer">
         <div class="container py-5">
-          <h1>Welcome Summer ☀</h1>
-          <div class="row">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1>Welcome Summer ☀</h1>
+            <button type="button" class="btn btn-light align-self-center" data-toggle="collapse"
+                    data-target="#collapseSummer" aria-expanded="false" aria-controls="collapseSummer">
+                    Collassa
+                </button>
+          </div>          
+          <div class="row" id="collapseSummer">
             <div class="col-6 py-sm-3 col-md-4 col-lg-2">
               <div class="card shadow p-3 mb-5">  <!-- Esercizio 8: ombra (shadow) ad ogni card di "welcome Summer"-->
                   <img src="assets/img/santorini.jpg" class="card-img-top" alt="santorini.jpg">
@@ -174,8 +186,14 @@
       <!-- Esercizio 6: Offerta del Giorno -->
       <section id="dayOffer">
         <div class="container py-1 d-none d-sm-none d-md-block"> <!-- Esercizio 7: Offerta del Giorno non visibile da mobile -->
-          <h1>OFFERTA DEL GIORNO 💣</h1>
-          <div class="row">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1>OFFERTA DEL GIORNO 💣</h1>
+            <button type="button" class="btn btn-light align-self-center" data-toggle="collapse"
+                    data-target="#collapseDayOffer" aria-expanded="false" aria-controls="collapseDayOffer">
+                    Collassa
+                </button>
+          </div>           
+          <div class="row" id="collapseDayOffer">
               <div class="col-md-12 col-lg-8">
                 <img src="assets/img/praga.jpg" class="img-fluid" alt="praga.jpg">
               </div>
@@ -193,9 +211,14 @@
       <!-- Esercizio 9: Last Minute -->
       <section id="lastMinute">
         <div class="container py-5">
-          <h1>LAST MINUTE 🕑</h1>
-          <h5>Non farti scappare queste offerte dell'ultimo secondo!</h5>
-          <div class="row">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1>LAST MINUTE 🕑</h1>
+            <button type="button" class="btn btn-light align-self-center" data-toggle="collapse"
+                    data-target="#collapseLastMinute" aria-expanded="false" aria-controls="collapseLastMinute">
+                    Collassa
+                </button>
+          </div>
+          <div class="row" id="collapseLastMinute">
             <div class="col-6 py-sm-3 col-md-4 col-lg-3">
               <div class="card">
                   <img src="assets/img/dublino.jpg" class="card-img-top" alt="dublino.jpg">
@@ -246,9 +269,15 @@
       <!-- Esercizio 10: testimonianze (con il carosello) -->
       <section id="testimonial">
         <div class="container">
-          <h1>Recensioni:</h1>
-          <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="100000">
+          <div class="d-flex align-items-center justify-content-between">
+            <h1>Recensioni:</h1>
+            <button type="button" class="btn btn-light align-self-center" data-toggle="collapse"
+                    data-target="#collapseTestimonial" aria-expanded="false" aria-controls="collapseTestimonial">
+                    Collassa
+                </button>
+          </div>
+          <div class="row" id="collapseTestimonial">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="8000">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -257,10 +286,10 @@
               <div class="carousel-inner bg-secondary">
                 <div class="carousel-item active ">
                   <div class="row mx-0 px-5 align-items-center">
-                  <div class="col-6">
+                  <div class="col-md-12 col-lg-6">
                     <img src="assets/img/aldo.jpg" class="img-fluid" alt="aldo.jpg">
                   </div>
-                  <div class="col-6">
+                  <div class="col-md-12 col-lg-6">
                     <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsa illum accusantium repudiandae nostrum tenetur assumenda saepe corrupti.
                     Ipsam voluptates fuga odit temporibus excepturi iste in aspernatur pariatur quos reprehenderit</p>
                   </div>
@@ -268,21 +297,21 @@
                 </div>
                 <div class="carousel-item">
                   <div class="row mx-0 px-5 align-items-center">
-                    <div class="col-6">
+                    <div class="col-md-12 col-lg-6">
                       <img src="assets/img/eli.jpg" class="img-fluid" alt="eli.jpg">
                     </div>
-                    <div class="col-6">
-                      <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel nostrum consectetur incidunt quia! Excepturi illum error reiciendis ducimus, nesciunt id quia ratione recusandae, ad unde eaque cum est vitae.</span>
+                    <div class="col-md-12 col-lg-6">
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel nostrum consectetur incidunt quia! Excepturi illum error reiciendis ducimus, nesciunt id quia ratione recusandae, ad unde eaque cum est vitae.</span>
                     </div>
                 </div>
                 </div>
                 <div class="carousel-item">
                   <div class="row mx-0 px-5 align-items-center">
-                    <div class="col-6">
+                    <div class="col-md-12 col-lg-6">
                       <img src="assets/img/ryan.jpg" class="img-fluid" alt="ryan.jpg">
                     </div>
-                    <div class="col-6">
-                      <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut dolor, ex facere earum rerum nesciunt repudiandae sint quis quibusdam libero quod blanditiis quasi architecto consectetur corrupti iusto nulla sed.</span>
+                    <div class="col-md-12 col-lg-6">
+                      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut dolor, ex facere earum rerum nesciunt repudiandae sint quis quibusdam libero quod blanditiis quasi architecto consectetur corrupti iusto nulla sed.</span>
                     </div>
                     </div>
                   </div>
