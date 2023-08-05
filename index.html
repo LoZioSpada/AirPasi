@@ -29,13 +29,19 @@
       </nav>
 
       <!-- Esercizio 3: jumbotron -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">AirPasi</h1>
-          <p class="lead">Arriviamo dove le persone desiderano.</p>
+      <div class="container ">
+        <div class="row">
+          <div class="col-12">
+            <div class="jumbotron mt-5">
+              <h1 class="display-4">AirPasi</h1>
+              <p class="lead">Arriviamo dove le persone desiderano!</p>
+              <hr class="my-4">
+              <p>Non farti sfuggire la possibilità di viaggiare con noi!</p>
+              <a class="btn btn-primary btn-lg" href="#" role="button">Scopri di più</a>
+            </div>
+          </div>
         </div>
       </div>
-
 
       <!-- Esercizio 4: Offerta della Settimana -->
       <section id="weekOffer">
@@ -242,7 +248,7 @@
         <div class="container">
           <h1>Recensioni:</h1>
           <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="10000000000000">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="100000">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -250,24 +256,36 @@
               </ol>
               <div class="carousel-inner bg-secondary">
                 <div class="carousel-item active ">
-                  <div class="row mx-0">
+                  <div class="row mx-0 px-5 align-items-center">
                   <div class="col-6">
-                    <img src="assets/img/aldo.jpg" alt="aldo.jpg">
+                    <img src="assets/img/aldo.jpg" class="img-fluid" alt="aldo.jpg">
                   </div>
                   <div class="col-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsa illum accusantium repudiandae nostrum tenetur assumenda saepe corrupti.
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ipsa illum accusantium repudiandae nostrum tenetur assumenda saepe corrupti.
                     Ipsam voluptates fuga odit temporibus excepturi iste in aspernatur pariatur quos reprehenderit</p>
                   </div>
                 </div>
                 </div>
-                <div class="carousel-item row">
-                  <img src="assets/img/eli.jpg" class="col-6" alt="eli.jpg">
-                  <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel nostrum consectetur incidunt quia! Excepturi illum error reiciendis ducimus, nesciunt id quia ratione recusandae, ad unde eaque cum est vitae.</span>
+                <div class="carousel-item">
+                  <div class="row mx-0 px-5 align-items-center">
+                    <div class="col-6">
+                      <img src="assets/img/eli.jpg" class="img-fluid" alt="eli.jpg">
+                    </div>
+                    <div class="col-6">
+                      <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel nostrum consectetur incidunt quia! Excepturi illum error reiciendis ducimus, nesciunt id quia ratione recusandae, ad unde eaque cum est vitae.</span>
+                    </div>
                 </div>
-                <div class="carousel-item row">
-                  <img src="assets/img/ryan.jpg" class="col-6" alt="ryan.jpg">
-                  <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut dolor, ex facere earum rerum nesciunt repudiandae sint quis quibusdam libero quod blanditiis quasi architecto consectetur corrupti iusto nulla sed.</span>
                 </div>
+                <div class="carousel-item">
+                  <div class="row mx-0 px-5 align-items-center">
+                    <div class="col-6">
+                      <img src="assets/img/ryan.jpg" class="img-fluid" alt="ryan.jpg">
+                    </div>
+                    <div class="col-6">
+                      <span class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aut dolor, ex facere earum rerum nesciunt repudiandae sint quis quibusdam libero quod blanditiis quasi architecto consectetur corrupti iusto nulla sed.</span>
+                    </div>
+                    </div>
+                  </div>
               </div>
               <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -282,10 +300,41 @@
         </div>
       </section>
 
-
+      <!-- Esercizio 11: info agenzia + tasto "contattaci" -->
+      <footer class="container-fluid d-flex flex-column justify-content-center align-items-center py-3 bg-dark text-light mt-5">
+        <button type="button" class="btn btn-outline-secondary mb-2" data-toggle="modal" data-target="#exampleModal">
+          Contattaci
+      </button>
+      <span>© 2023 AirPasi All Rights Reserved.</span>
+      </footer>
     
-    
-    
+      <!-- Fare riferimento ad esercizio 4 di JavaScript  -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contattaci</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="recipient-name" placeholder="email">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+              <button type="button" class="btn btn-primary">Invia messaggio</button>
+            </div>
+          </div>
+        </div>
+      </div>
     
     
     
