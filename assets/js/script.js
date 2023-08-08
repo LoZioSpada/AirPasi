@@ -4,7 +4,7 @@ window.onload = function() {
     // Esercizio 2: contare il numero di viaggi presenti sulla pagina
     const contaViaggi = document.querySelectorAll(".card")
     alert("Sono presenti " + contaViaggi.length + " viaggi su questa pagina")
-    contaViaggi() //ritorna il numero di viaggi in console
+    console.log(contaViaggi) //ritorna il numero di viaggi in console
 
     //Esercizio 3-4 eseguito sull'html usando Bootstrap (Modal)    
 }
